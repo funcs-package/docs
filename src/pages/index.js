@@ -9,7 +9,13 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  function download() {
+  async function download() {
+    const permissionStatus = await navigator.permissions?.query({ name: 'clipboard-read' });
+    if (!permissionStatus || permissionStatus?.state === 'denied') {
+      if (typeof window !== 'undefined')
+        return alert('Permission to read from the clipboard is denied');
+      return console.error('Permission to read from the clipboard is denied')
+    }
     navigator.clipboard.writeText('npm i @khaidev1012/funcs');
   }
   return (
