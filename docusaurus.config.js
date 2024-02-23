@@ -13,10 +13,10 @@ const config = {
   tagline: 'A Package that synthesis of utility functions',
 
   // Set the production url of your site here
-  url: 'https://funcs-package.github.io/docs',
+  url: 'https://funcs-package.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   deploymentBranch: 'deployment',
 
