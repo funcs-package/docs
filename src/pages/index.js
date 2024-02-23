@@ -16,7 +16,7 @@ function HomepageHeader() {
         return alert('Permission to read from the clipboard is denied');
       return console.error('Permission to read from the clipboard is denied')
     }
-    navigator.clipboard.writeText('npm i @khaidev1012/funcs');
+    navigator?.clipboard.writeText('npm i @khaidev1012/funcs');
   }
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
