@@ -16,7 +16,7 @@ const config = {
   url: 'https://funcs-package.github.io/docs',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   deploymentBranch: 'deployment',
 
