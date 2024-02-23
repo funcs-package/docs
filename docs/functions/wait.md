@@ -14,7 +14,7 @@ Pauses the execution of an asynchronous function for a specified duration.
 
 ## Returns
 
-[void](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void)
+[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[void](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void)\>
 
 ## Example
 

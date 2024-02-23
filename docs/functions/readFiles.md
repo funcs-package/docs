@@ -12,7 +12,7 @@ Reads all files in a directory and its subdirectories synchronously. Optionally,
 | ------------------ | -------------------------------------------------------------------------------------------------------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dirName            | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)        | false    |         | The directory to read files from.                                                                                                                                                           |
 | options            | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)        | true     |         | An object with optional parameters.                                                                                                                                                         |
-| options.extensions | [Array\<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | true     | []      | An array of file extensions to filter the files by. If not provided, all files are read.                                                                                                    |
+| options.extensions | [Array\<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | true     | [ ]     | An array of file extensions to filter the files by. If not provided, all files are read.                                                                                                    |
 | options.noPromise  | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)      | true     | false   | A boolean indicating whether to return the result directly or wrapped in a Promise. If true, the result is returned directly. If false or not provided, the result is wrapped in a Promise. |
 
 ## Returns
@@ -28,7 +28,7 @@ readFiles(`${process.cwd()}/src`, { extensions: [".js"], noPromise: true }); // 
 
 ```
 ./
-|--src
+├───src
 |   ├───functions
 |   |       ├───duration.js
 |   |       └───fetchWithTimeout.js

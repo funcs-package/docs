@@ -14,7 +14,7 @@ Converts the first character of a string to uppercase.
 
 ## Returns
 
-[sring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ## Example
 
