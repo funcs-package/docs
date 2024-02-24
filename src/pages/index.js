@@ -36,9 +36,9 @@ function HomepageHeader() {
         <a href="https://npmjs.org/package/@khaidev1012/funcs"><img src="https://img.shields.io/npm/v/@khaidev1012/funcs"></img></a>
         <a href="https://npmjs.org/package/@khaidev1012/funcs"><img src="https://img.shields.io/bundlephobia/min/@khaidev1012/funcs"></img></a>
         <a href="https://npmjs.org/package/@khaidev1012/funcs"><img src="https://img.shields.io/npm/dt/@khaidev1012/funcs"></img></a>
-        <a href="https://libraries.io/github/TruongDuyKhai/funcs"><img src="https://img.shields.io/librariesio/release/npm/@khaidev1012/funcs"></img></a>
+        <a href="https://libraries.io/github/funcs-package/funcs"><img src="https://img.shields.io/librariesio/release/npm/@khaidev1012/funcs"></img></a>
         <a href="https://libraries.io/npm/@khaidev1012%2Ffuncs"><img src="https://img.shields.io/librariesio/sourcerank/npm/@khaidev1012/funcs"></img></a>
-        <a href="https://github.com/TruongDuyKhai/funcs/releases"><img src="https://img.shields.io/github/release-date/TruongDuyKhai/funcs"></img></a>
+        <a href="https://github.com/funcs-package/funcs/releases"><img src="https://img.shields.io/github/release-date/funcs-package/funcs"></img></a>
         <a href="https://npmjs.org/package/@khaidev1012/funcs"><img src="https://img.shields.io/npm/l/@khaidev1012/funcs"></img></a>
       </div>
     </header>
