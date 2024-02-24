@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfuncs=self.webpackChunkfuncs||[]).push([[406],{8160:s=>{s.exports=JSON.parse('{"title":"Classes","slug":"/category/classes","permalink":"/docs/docs/category/classes","navigation":{"previous":{"title":"Getting Started","permalink":"/docs/docs/intro"},"next":{"title":"Timer","permalink":"/docs/docs/classes/Timer"}}}')}}]);
