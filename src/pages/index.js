@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import React, { useEffect } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -9,15 +10,17 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  async function download() {
-    if (typeof window == 'undefined') return;
-    if (!navigator) return;
-    const permissionStatus = await navigator.permissions?.query({ name: 'clipboard-read' });
-    if (!permissionStatus || permissionStatus?.state === 'denied') {
-      return alert('Permission to read from the clipboard is denied');
+  useEffect(() => {
+    document.getElementById('copy-button').onclick = async function() {
+      if (typeof window == 'undefined') return;
+      if (!navigator) return;
+      const permissionStatus = await navigator.permissions?.query({ name: 'clipboard-write' });
+      if (!permissionStatus || permissionStatus?.state === 'denied') {
+        return alert('Permission to write to the clipboard is denied');
+      }
+      navigator.clipboard.writeText('npm i @khaidev1012/funcs');
     }
-    navigator.clipboard.writeText('npm i @khaidev1012/funcs');
-  }
+  }, []);
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -28,7 +31,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <button
             className="button button--secondary button--lg"
-            onclick={download()}>
+            id="copy-button">
             npm i @khaidev1012/funcs
           </button>
         </div>
